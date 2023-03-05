@@ -6,11 +6,21 @@
 //
 
 import UIKit
+import KRProgressHUD
+
+//Show KRProgressHUD globally
+func showARSProgress(){
+    KRProgressHUD.show(withMessage: "Loading...")
+}
+//Hide KRProgressHUD globally
+func hideARSProgress(){
+    DispatchQueue.main.asyncAfter(deadline: .now()) {
+        KRProgressHUD.dismiss()
+    }
+}
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
