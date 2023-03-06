@@ -6,9 +6,8 @@
 //
 
 import Foundation
-
-// MARK: - MatchModel
-struct MatchModel: Codable {
+// MARK: - Players
+struct Players: Codable {
     let matchdetail: Matchdetail?
     let nuggets: [String]?
     let innings: [Inning]?
@@ -258,23 +257,24 @@ struct Team: Codable {
 // MARK: - Player
 struct Player: Codable {
     let position, nameFull: String?
+    let iskeeper: Bool?
     let batting: Batting?
     let bowling: Bowling?
-    let iscaptain, iskeeper: Bool?
+    let iscaptain: Bool?
 
     enum CodingKeys: String, CodingKey {
         case position = "Position"
         case nameFull = "Name_Full"
+        case iskeeper = "Iskeeper"
         case batting = "Batting"
         case bowling = "Bowling"
         case iscaptain = "Iscaptain"
-        case iskeeper = "Iskeeper"
     }
 }
 
 // MARK: - Batting
 struct Batting: Codable {
-    let style: String?
+    let style: Style?
     let average, strikerate, runs: String?
 
     enum CodingKeys: String, CodingKey {
@@ -285,9 +285,15 @@ struct Batting: Codable {
     }
 }
 
+enum Style: String, Codable {
+    case lhb = "LHB"
+    case rhb = "RHB"
+}
+
 // MARK: - Bowling
 struct Bowling: Codable {
     let style, average, economyrate, wickets: String?
+
     enum CodingKeys: String, CodingKey {
         case style = "Style"
         case average = "Average"
