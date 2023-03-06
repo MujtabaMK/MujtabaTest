@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         self.getMatchDetailsApi1()
     }
     func getMatchDetailsApi1()  {
+        showARSProgress()
         guard let url = URL(string: "https://demo.sportz.io/nzin01312019187360.json") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -75,6 +76,7 @@ class ViewController: UIViewController {
                     let playerData = try JSONDecoder().decode(Players.self, from: data!)
                     print(playerData, "playerData")
                     DispatchQueue.main.async {
+                        hideARSProgress()
                         self.playerData2 = playerData
                         self.lblCountryVenue2.text = playerData.matchdetail?.venue?.name
                         self.lblCountryTime2.text = "\(playerData.matchdetail?.match?.date ?? "") " + "\(playerData.matchdetail?.match?.time ?? "")"
