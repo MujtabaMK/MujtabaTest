@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
     func getMatchDetailsApi1()  {
         showARSProgress()
-        guard let url = URL(string: "https://demo.sportz.io/nzin01312019187360.json") else { return }
+        guard let url = URL(string: urlTeam1) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         let session = URLSession.shared
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         }.resume()
     }
     func getMatchDetailsApi2()  {
-        guard let url = URL(string: "https://demo.sportz.io/sapk01222019186652.json") else { return }
+        guard let url = URL(string: urlTeam2) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         let session = URLSession.shared

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094CF1F729B5F265003178A0 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094CF1F629B5F265003178A0 /* BaseAPI.swift */; };
+		094CF1FA29B5F2E4003178A0 /* APIDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094CF1F929B5F2E4003178A0 /* APIDefine.swift */; };
 		0987688129B4884700542CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987688029B4884700542CB0 /* AppDelegate.swift */; };
 		0987688329B4884700542CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987688229B4884700542CB0 /* SceneDelegate.swift */; };
 		0987688A29B4884B00542CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0987688929B4884B00542CB0 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094CF1F629B5F265003178A0 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		094CF1F929B5F2E4003178A0 /* APIDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDefine.swift; sourceTree = "<group>"; };
 		0987687D29B4884700542CB0 /* MujtabaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MujtabaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0987688029B4884700542CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0987688229B4884700542CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094CF1F529B5F237003178A0 /* Base API */ = {
+			isa = PBXGroup;
+			children = (
+				094CF1F629B5F265003178A0 /* BaseAPI.swift */,
+			);
+			path = "Base API";
+			sourceTree = "<group>";
+		};
+		094CF1F829B5F2C8003178A0 /* API Define */ = {
+			isa = PBXGroup;
+			children = (
+				094CF1F929B5F2E4003178A0 /* APIDefine.swift */,
+			);
+			path = "API Define";
+			sourceTree = "<group>";
+		};
 		0987687429B4884700542CB0 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +95,8 @@
 		0987687F29B4884700542CB0 /* MujtabaTest */ = {
 			isa = PBXGroup;
 			children = (
+				094CF1F529B5F237003178A0 /* Base API */,
+				094CF1F829B5F2C8003178A0 /* API Define */,
 				0987689929B48BA500542CB0 /* Model */,
 				0987689829B48B9C00542CB0 /* View */,
 				0987689729B48B9300542CB0 /* Controller */,
@@ -256,6 +278,8 @@
 				09DCC8D129B5E5C8007B8935 /* ViewController.swift in Sources */,
 				09DCC8CD29B5E57D007B8935 /* CardView.swift in Sources */,
 				0987689B29B48BEE00542CB0 /* PlayersModel.swift in Sources */,
+				094CF1FA29B5F2E4003178A0 /* APIDefine.swift in Sources */,
+				094CF1F729B5F265003178A0 /* BaseAPI.swift in Sources */,
 				0987688129B4884700542CB0 /* AppDelegate.swift in Sources */,
 				09DCC8CC29B5E57D007B8935 /* TableViewCell.swift in Sources */,
 				09DCC8D229B5E5C8007B8935 /* CustomePopupVC.swift in Sources */,

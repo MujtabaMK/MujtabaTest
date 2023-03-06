@@ -25,6 +25,7 @@ class SecondVC: UIViewController {
     var checking: String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        SetUI()
         self.showFilterMenu = true
         self.fliterView.isHidden = true
         self.custamization()
